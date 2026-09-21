@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Team</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #dbeafe, #eff6ff);
+    min-height: 100vh;
+}
+
+/* container กลาง */
+.wrapper {
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+/* header */
+.header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.header h1 {
+    font-size: 38px;
+    color: #1e3a8a;
+}
+
+.header p {
+    margin-top: 10px;
+    color: #64748b;
+}
+
+/* grid */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 30px;
+}
+
+/* card */
+.card {
+    background: rgba(255,255,255,0.75);
+    backdrop-filter: blur(15px);
+    border-radius: 24px;
+    padding: 30px 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.35s;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+/* hover */
+.card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 30px 70px rgba(59,130,246,0.25);
+}
+
+/* avatar */
+.avatar {
+    width: 110px;
+    height: 110px;
+    margin: auto;
+    border-radius: 50%;
+    padding: 4px;
+    background: linear-gradient(135deg, #60a5fa, #93c5fd);
+    margin-bottom: 18px;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* name */
+.card h2 {
+    font-size: 18px;
+    color: #1e293b;
+    margin-bottom: 5px;
+}
+
+/* role */
+.card p {
+    font-size: 14px;
+    color: #64748b;
+}
+
+/* hover text */
+.card:hover h2 {
+    color: #2563eb;
+}
+
+/* responsive ปรับคอลัมน์ */
+@media (min-width: 1024px) {
+    .card-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 1023px) {
+    .card-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <header class="header">
+        <h1>💙 Cluster 0</h1>
+        <p>Meet our awesome team members</p>
+    </header>
+
+    <main class="card-container">
+
+        <div class="card" onclick="window.location.href='/67160148'">
+            <div class="avatar">
+                <img src="{{ asset('images/148.JPG') }}">
+            </div>
+            <h2>Pakasit chinnawong</h2>
+            <p>Project Manager</p>
+        </div>
+
+        <div class="card" onclick="window.location.href='/67160149'">
+            <div class="avatar">
+                <img src="{{ asset('images/149.JPG') }}">
+            </div>
+            <h2>Rujirat Nhanan</h2>
+            <p>Planning Manager</p>
+        </div>
+
+        <div class="card" onclick="window.location.href='/67160304'">
+            <div class="avatar">
+                <img src="{{ asset('images/304.JPG') }}">
+            </div>
+            <h2>Lalana Danprasit</h2>
+            <p>Planning Engineer</p>
+        </div>
+
+        <div class="card" onclick="window.location.href='/67160284'">
+            <div class="avatar">
+                <img src="{{ asset('images/284.JPG') }}">
+            </div>
+            <h2>Napat Duangprakon</h2>
+            <p>Quality Manager</p>
+        </div>
+
+        <div class="card" onclick="window.location.href='/67160438'">
+            <div class="avatar">
+                <img src="{{ asset('images/438.JPG') }}">
+            </div>
+            <h2>Natcha Yuanjaroen</h2>
+            <p>Quality Engineer</p>
+        </div>
+
+        <div class="card" onclick="window.location.href='/67160139'">
+            <div class="avatar">
+                <img src="{{ asset('images/139.JPG') }}">
+            </div>
+            <h2>Thirapat Paton</h2>
+            <p>Developer Manager</p>
+        </div>
+
+        <div class="card" onclick="window.location.href='/67160125'">
+            <div class="avatar">
+                <img src="{{ asset('images/125.JPG') }}">
+            </div>
+            <h2>Jirayu Wongkumhan</h2>
+            <p>Developer Engineer</p>
+        </div>
+
+        <div class="card" onclick="window.location.href='/67160455'">
+            <div class="avatar">
+                <img src="{{ asset('images/455.JPG') }}">
+            </div>
+            <h2>Ekkrit Powat</h2>
+            <p>Developer Engineer</p>
+        </div>
+
+        <div class="card" onclick="window.location.href='/67160298'">
+            <div class="avatar">
+                <img src="{{ asset('images/298.JPG') }}">
+            </div>
+            <h2>Phichai Thongpongpan</h2>
+            <p>Support Manager</p>
+        </div>
+
+        <div class="card" onclick="window.location.href='/67160290'">
+            <div class="avatar">
+                <img src="{{ asset('images/290.JPG') }}">
+            </div>
+            <h2>Teerapong Chuenwong</h2>
+            <p>Support Engineer</p>
+        </div>
+
+        <div class="card" onclick="window.location.href='/67160290'">
+            <div class="avatar">
+                <img src="{{ asset('images/290.JPG') }}">
+            </div>
+            <h2>Teerapong Chuenwong</h2>
+            <p>Support Engineer</p>
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html> 
